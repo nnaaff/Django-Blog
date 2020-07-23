@@ -18,7 +18,9 @@ def article_create(request):
     if request.method == 'POST':
         form = forms.CreateArticle(request.POST, request.FILES)
         if form.is_valid():
-            # save form to DB
+            beforeSaving = form.save(commit=False)
+            beforeSaving.author = request.user
+            beforeSaving.save()
             return redirect('articles:list')
     else:
         # create a form instance with "fields" fields of "model" in the order as mentioned in "fields", from "Meta"

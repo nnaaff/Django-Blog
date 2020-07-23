@@ -3,10 +3,11 @@
 {% block content %}
     <div class="article-detail">
         <div class="article">
-            <br> <h1>{{ article.title }}</h1> <br>
+            <br> <h2>{{ article.title }}</h2> 
+            <h4> Written by: {{ article.author.username }} </h4>
             <img src="{{ article.thumb.url }}">
-            <p> {{ article.body }} </p> <br>
-            <h5><p> {{ article.date }} </p></h5>
+            <p> {{ article.body }} </p>
+            <p class="date"> {{ article.date }} </p> <br>
         </div>        
     </div>
 {% endblock %}
