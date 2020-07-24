@@ -21,12 +21,15 @@ a, a:hover, a:visited {
 
 .wrapper {
     max-width: 960px;
-    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 div.wrapper > h1 {
     text-align: center;
-    margin: 90px auto;
+    margin: 50px auto;
     font-size: 2.4em;
 }
 
@@ -51,8 +54,10 @@ nav button {
     background: none;
     color: #fff;
     cursor: pointer;
-    border: 0;
     font-size: 20px;
+    border: 0.5px solid #fff;
+    padding: 7px;
+    border-radius: 4px;
 }
 
 .articles {
@@ -93,6 +98,7 @@ nav button {
 
 .article-detail .article img {
     max-width: 100%;
+    margin-top: 5px;
 }
 
 .article-detail .article h2 {
@@ -108,11 +114,79 @@ nav button {
 }
 
 .article-detail .article p {
-    margin: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
 }
 
 .article-detail .article .date {
     font-size: 0.8em;
+}
+
+.site-form {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: 1px solid #00dba0;
+    padding: 20px;
+}
+
+.site-form input {
+    display: block;
+    margin: 5px 0 10px 0;
+    padding: 10px;
+}
+
+.site-form textarea {
+    display: block;
+    margin: 5px 0 10px 0;
+    padding: 10px;
+}
+
+a.highlight {
+    border: 1px solid #00dba0;
+    padding: 8px;
+    border-radius: 4px;
+    color: #00dba0;
+}
+
+.login-link, .signup-link {
+    border: 1px solid #fff;
+    padding: 8px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.helptext, .helptext ul {
+    display: block;
+    margin: 0 0 50px 0;
+    color: #bbb;
+    font-size: 16px;
+    list-style-type: square;
+}
+
+.errorlist li {
+    padding: 7px;
+    list-style-type: none;
+    border: 1px solid #FF5722;
+    margin: 10px 0;
+    color: #FF5722
+}
+
+.errorlist {
+    padding: 0;
+}
+
+.site-form input[type="submit"] {
+    background: #00dba0;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 
 
