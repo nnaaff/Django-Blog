@@ -15,4 +15,4 @@ Users can **"Sign Up"**, **"Login"**, **"View"** existing articles, **"Create"**
 - The *Title* of the article is automatically converted into a slug.
 - Users can *Logout*.
 
-Only the **Admin**(superuser) profile has article modification and deletion rights.
+Only the **Admin** (superuser) profile has article modification and deletion rights.
